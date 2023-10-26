@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "turnkey-book"
+version = "0.1.0"
+description = ""
+authors = ["BaDum-Tss <99732685+BuDum-Tss@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+"tb" = "rdts.cli:entrypoint"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.2"
+mypy = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
