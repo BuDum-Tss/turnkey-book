@@ -4,12 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["BaDum-Tss <99732685+BuDum-Tss@users.noreply.github.com>"]
 readme = "README.md"
+packages = [{include = "turnkeybook"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+requests = "^2.31.0"
+openai = "^1.3.4"
 
 [tool.poetry.scripts]
-"tb" = "rdts.cli:entrypoint"
+tb = "turnkeybook.cli:entrypoint"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.2"
